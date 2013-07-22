@@ -30,7 +30,12 @@ set wildmode=list:longest,full
 " put useful info in status bar
 set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
 
-"colorscheme base16-railscasts
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
 
 highlight clear SignColumn
 highlight VertSplit    ctermbg=236
