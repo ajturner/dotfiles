@@ -1,0 +1,25 @@
+#export DEVKITPRO=/Users/ajturner/Projects/hardware/NintendoDS/DevKitPro
+#export DEVKITARM=$DEVKITPRO/devkitARM
+export PATH=$DEVKITARM/bin:$PATH
+export PATH=:~/bin/:/usr/local/mtasc:$PATH
+export HISTCONTROL=ignoredups
+
+#export JAVA_TOOL_OPTIONS=-Xmx1024m
+export JAVA_HOME="$(/usr/libexec/java_home)"
+export GNUTERM=aqua
+alias tf="tail -f"
+alias tdev="tail -f log/development.log"
+alias ttest="tail -f log/test.log"
+alias tbg="tail -f log/backgroundrb.log"
+alias irb="irb -rubygems"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+alias fih="history |grep "
+alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias p="git push origin "
+alias gpm="git push origin master"
+alias glog="git log --graph --pretty=format:'\''%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative --all'"
+alias git=hub
+alias gl="git log --oneline --abbrev-commit --all"
+alias gg="git log --oneline --abbrev-commit --all --graph --decorate --color"
